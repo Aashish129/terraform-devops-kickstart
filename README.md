@@ -1,36 +1,33 @@
 # Terraform DevOps Kickstart 🚀
 A Terraform project for provisioning AWS infrastructure using best practices.
 
-## Overview
-This project provisions an AWS EC2 instance using Terraform.
+## Description
+This repository serves as a starting point for setting up infrastructure using Terraform.  
+It includes basic configurations for AWS resources such as an EC2 instance, RDS, and networking setup.
 
 ## Prerequisites
-- Terraform installed (`terraform --version`)
-- AWS CLI configured (`aws configure`)
-- Git installed (`git --version`)
+- Terraform (>=1.0.0)
+- AWS CLI configured with necessary permissions
+- Git
 
-## Setup Instructions
+## Setup & Installation
+```sh
+git clone https://github.com/Aashish129/terraform-devops-kickstart.git
+cd terraform-devops-kickstart
+terraform init
+terraform plan
+terraform apply
 
-1. Clone the repository:
-   ```sh
-   git clone git@github.com:Aashish129/terraform-devops-kickstart.git
-   cd terraform-devops-kickstart
+## Configuration
+```sh
+variable "instance_type" {
+  default = "t3.medium"
+}
 
-2. Initialize Terraform:
-   ```sh
-   terraform init
+## How to Downsize the Instance
+```sh
+terraform apply -var="instance_type=t3.micro"
 
-3. Plan the deployment:
-   ```sh
-   terraform plan
-
-4. Apply the changes
-   ```sh
-   terraform apply -auto-approve
-
-5. Destroy the infrastructure
-   ```sh
-   terraform destroy -auto-approve
-
-
-
+## Contributing & Future Improvements
+.	Contributions are welcome!
+.	Future improvements include autoscaling and monitoring.
