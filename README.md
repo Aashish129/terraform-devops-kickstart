@@ -1,6 +1,5 @@
-# terraform-devops-kickstart
-A Terraform project for provisioning AWS infrastructure using best practices.
 # Terraform DevOps Kickstart 🚀
+A Terraform project for provisioning AWS infrastructure using best practices.
 
 ## Overview
 This project provisions an AWS EC2 instance using Terraform.
