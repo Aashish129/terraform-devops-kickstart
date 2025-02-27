@@ -29,5 +29,5 @@ variable "instance_type" {
 terraform apply -var="instance_type=t3.micro"
 
 ## Contributing & Future Improvements
-.	Contributions are welcome!
-.	Future improvements include autoscaling and monitoring.
+- Contributions are welcome!
+- Future improvements include autoscaling and monitoring.
